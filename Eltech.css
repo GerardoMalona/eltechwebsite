@@ -16,11 +16,18 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center; /* Menyeseuaikan posisi vertikal agar sejajar di tengah */
+  gap: 0.5px;
   font-weight: 800;
   font-size: 1.5rem;
   color: #0d233a;
 }
 
+.logo-img {
+  height: 65px;        /* Atur tinggi logo sesuai kebutuhan */
+  width: auto;         /* Mempertahankan rasio lebar gambar */
+}
 .nav-links a {
   margin: 0 1rem;
   text-decoration: none;
@@ -65,8 +72,9 @@
 
 .hero-content .sub-heading {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 1.6rem;
 }
+
 
 .hero-content h1 {
   font-size: 2.8rem;
@@ -77,7 +85,7 @@
 
 .hero-content p {
   color: #666;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4.5rem;
   line-height: 1.6;
 }
 
