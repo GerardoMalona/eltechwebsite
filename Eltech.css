@@ -6,13 +6,32 @@
 }
 
 /* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 8%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Menyusun logo dan menu secara vertikal */
+        align-items: center;
+        background-color: #ffffff; /* Latar belakang putih tebal */
+        padding: 12px 15px;
+        position: relative;
+        z-index: 1000; /* Memastikan navbar tidak tertutup gambar/elemen lain */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-wrap: wrap; /* Mencegah teks terpotong ke samping */
+        justify-content: center;
+        gap: 12px;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .nav-links a {
+        color: #333333 !important; /* Warna teks gelap yang kontras */
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
 }
 
 .logo {
@@ -111,14 +130,14 @@
     grid-template-columns: 1fr;
   }
   .nav-links {
-    display: none; /* Dapat diganti dengan toggle hamburger menu */
+     /*display: none; Dapat diganti dengan toggle hamburger menu */
   }
 }
 /* --- Pricing Page Styling --- */
 .pricing-section {
     padding: 50px 20px;
     text-align: center;
-    max-width: 100%;
+    max-width: 40%;
     margin: 0 auto;
 }
 
@@ -148,7 +167,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     overflow: hidden;
-    width: 100%;
+    width: 40%;
     max-width: 100%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     display: flex;
@@ -163,7 +182,7 @@
 
 /* Gambar Building */
 .pricing-img {
-    width: 100%;
+    width: 40%;
     height: 250px;
     object-fit: cover;
 }
