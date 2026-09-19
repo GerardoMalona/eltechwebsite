@@ -9,11 +9,16 @@
 @media (max-width: 768px) {
     .navbar {
         display: flex;
+        justify-content: space-between;
         flex-direction: column; /* Menyusun logo dan menu secara vertikal */
         align-items: center;
+        gap: 12px;
+        margin: 0 auto;
+        padding: 15px 10px;
+        width: 100%;
         background-color: #ffffff; /* Latar belakang putih tebal */
         position: relative;
-        z-index: 1000; /* Memastikan navbar tidak tertutup gambar/elemen lain */
+        z-index: 9999; /* Memastikan navbar tidak tertutup gambar/elemen lain */
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -21,7 +26,9 @@
         display: flex !important;
         flex-wrap: wrap; /* Mencegah teks terpotong ke samping */
         justify-content: center;
-        gap: 12px;
+        align-items: center;
+        gap: 10px 15px;
+        width: 100%;
         margin-top: 10px;
         padding: 0;
     }
@@ -29,6 +36,7 @@
     .nav-links a {
         color: #333333 !important; /* Warna teks gelap yang kontras */
         font-size: 0.9rem;
+        padding: 4px 8px;
         text-decoration: none;
     }
 }
@@ -40,6 +48,7 @@
   font-weight: 800;
   font-size: 1.5rem;
   color: #0d233a;
+  min-width: auto;
 }
 
 .logo-img {
@@ -60,6 +69,7 @@
 }
 
 .auth-buttons {
+  display: none;
   display: flex;
   align-items: center;
   gap: 1rem;
