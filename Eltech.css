@@ -12,7 +12,6 @@
         flex-direction: column; /* Menyusun logo dan menu secara vertikal */
         align-items: center;
         background-color: #ffffff; /* Latar belakang putih tebal */
-        padding: 12px 15px;
         position: relative;
         z-index: 1000; /* Memastikan navbar tidak tertutup gambar/elemen lain */
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -137,7 +136,7 @@
 .pricing-section {
     padding: 50px 20px;
     text-align: center;
-    max-width: 40%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -182,7 +181,7 @@
 
 /* Gambar Building */
 .pricing-img {
-    width: 40%;
+    width: 100%;
     height: 250px;
     object-fit: cover;
 }
