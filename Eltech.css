@@ -147,7 +147,7 @@
   }
 
   .pricing-card {
-    width: 320px /* Kad akan mengambil lebar penuh skrin HP */
+    width: 100%; /* Kad akan mengambil lebar penuh skrin HP */
     max-width: 100%;
   }
 
@@ -367,26 +367,4 @@
   color: #0d233a;
   border-bottom: 2px solid #0d233a;
   padding-bottom: 4px;
-}
-
-/* --- Styling Khusus Layar HP (Mobile) --- */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Mengubah alur menjadi vertikal saat di HP */
-    gap: 8px;
-    padding: 8px;
-  }
-
-  .nav-links {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 8px;
-  }
-
-  .nav-links a {
-    font-size: 0.82rem;
-    padding: 4px 6px;
-    margin: 0 !important;
-  }
 }
