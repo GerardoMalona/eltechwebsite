@@ -147,7 +147,7 @@
   }
 
   .pricing-card {
-    width: 100%; /* Kad akan mengambil lebar penuh skrin HP */
+    width: 320px /* Kad akan mengambil lebar penuh skrin HP */
     max-width: 100%;
   }
 
@@ -184,7 +184,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     overflow: hidden;
-    width: flex;
+    width: 320px;
     max-width: 100%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     display: flex;
