@@ -97,6 +97,10 @@
   background-color: #f8f9fa;
   gap: 3rem;
 }
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
 
 .hero-content .sub-heading {
   color: #666;
@@ -129,6 +133,8 @@
 
 .hero-image img {
   width: 100%;
+  max-width: 480px;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -153,7 +159,12 @@
   }
 }
   .hero {
-    grid-template-columns: 1fr;
+     display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4rem 8%;
+  background-color: #f8f9fa;
+  gap: 3rem;
   }
   .nav-links {
      /*display: none; Dapat diganti dengan toggle hamburger menu */
