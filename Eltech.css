@@ -145,9 +145,14 @@
     flex-direction: column;
     align-items: center;
   }
-
+.hero {
+        grid-template-columns: 1fr;
+        padding: 2rem 5%;
+        gap: 1.5rem;
+        text-align: center;
+    }
   .pricing-card {
-    width: 100%; /* Kad akan mengambil lebar penuh skrin HP */
+    width: 320px; /* Kad akan mengambil lebar penuh skrin HP */
     max-width: 100%;
   }
 
@@ -158,14 +163,6 @@
     object-fit: cover; /* Gunakan 'contain' jika mahu keseluruhan gambar kelihatan tanpa sebarang potongan */
   }
 }
-  .hero {
-     display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 4rem 8%;
-  background-color: #f8f9fa;
-  gap: 3rem;
-  }
   .nav-links {
      /*display: none; Dapat diganti dengan toggle hamburger menu */
   }
@@ -174,7 +171,7 @@
 .pricing-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 8px;
     flex-wrap: wrap; /* Menyusun ke bawah jika layar HP */
 }
 
