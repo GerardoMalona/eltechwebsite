@@ -138,45 +138,39 @@
   border-radius: 8px;
   object-fit: cover;
 }
-
-/* Responsif untuk Layar HP */
-@media (max-width: 768px) { 
-    .pricing-container {
-    flex-direction: column;
-    align-items: center;
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Menyusun ke bawah jika layar HP */
   }
-.hero {
-        grid-template-columns: 1fr;
-        padding: 2rem 5%;
-        gap: 1.5rem;
-        text-align: center;
-    }
   .pricing-card {
     width: 320px; /* Kad akan mengambil lebar penuh skrin HP */
     max-width: 100%;
   }
-
+  
   .pricing-img {
     width: 100%;
     height: auto; /* Tinggi gambar menyesuaikan skala lebar skrin secara nisbah */
     max-height: 220px;
     object-fit: cover; /* Gunakan 'contain' jika mahu keseluruhan gambar kelihatan tanpa sebarang potongan */
   }
-}
+
+/* Responsif untuk Layar HP */
+@media (max-width: 768px) { 
+.hero {
+        grid-template-columns: 1fr;
+        padding: 2rem 5%;
+        gap: 1.5rem;
+        text-align: center;
+    }
+  }
+
   .nav-links {
      /*display: none; Dapat diganti dengan toggle hamburger menu */
   }
 
-/* Container utama Flexbox (Kiri & Kanan) */
-.pricing-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Menyusun ke bawah jika layar HP */
-    max-width: 100%;
-    padding: 4rem 8%;
-    margin: 0 auto;
-}
+/* Containe utama Flexbox (Kiri & Kanan) */
 
 /* Kartu Produk/Layanan */
 .pricing-card {
@@ -185,7 +179,7 @@
     border-radius: 12px;
     overflow: hidden;
     flex: 1 1 280px;
-    max-width: 320px;
+    max-width: 360px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
